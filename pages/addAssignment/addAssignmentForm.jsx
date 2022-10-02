@@ -11,7 +11,7 @@ const App = () => {
 
 return (
    
-    <div style={{ marginTop:'8%', alignItems:'middle', alignContent:'middle', textAlign:'middle'}}>
+    <div style={{ marginTop:'8%', alignItems:'middle', alignContent:'middle', textAlign:'middle'}} className= 'bg-primary'>
         <Head>
             <link rel="stylesheet"
              href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
