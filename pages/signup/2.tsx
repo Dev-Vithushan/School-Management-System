@@ -7,12 +7,12 @@ function signup() {
       <div className="flex flex-col min-h-screen bg-grey-lighter">
                   <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
                       <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
-                          <h1 className="mb-8 text-3xl text-center">Create Account (2/2)</h1>
+                          <h1 className="mb-8 text-3xl text-center">Registration Form</h1>
                           <input 
                               type="text"
                               className="block w-full p-3 mb-4 border rounded border-grey-light"
-                              name="fullname"
-                              placeholder="Full Name" />
+                              name="User Name"
+                              placeholder="User Name" />
 
                           <input 
                               type="text"
