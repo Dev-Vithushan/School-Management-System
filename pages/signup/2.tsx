@@ -9,6 +9,22 @@ function signup() {
   return (
     <main className="min-h-screen bg-primary ">
       <div className="flex flex-col min-h-screen bg-grey-lighter">
+<<<<<<< HEAD
+                  <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
+                      <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
+                          <h1 className="mb-8 text-3xl text-center">Registration Form</h1>
+                          <input 
+                              type="text"
+                              className="block w-full p-3 mb-4 border rounded border-grey-light"
+                              name="User Name"
+                              placeholder="User Name" />
+
+                          <input 
+                              type="text"
+                              className="block w-full p-3 mb-4 border rounded border-grey-light"
+                              name="email"
+                              placeholder="Email" />
+=======
         <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
           <form onSubmit={handleSubmit} method="POST">
             <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
@@ -21,6 +37,7 @@ function signup() {
                 name="fullname"
                 placeholder="Full Name"
               />
+>>>>>>> main
 
               <input
                 type="text"
