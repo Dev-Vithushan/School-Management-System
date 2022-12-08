@@ -20,11 +20,12 @@ return (
         </Head>
         
         
-        <p style={{textAlign:'center'}}><b>Add a Assignment</b></p>
+        <p style={{textAlign:'center', fontSize: '20px'}}><br/><b>Add an Assignment</b></p>
+        <br/>
          <div className="styles.formContainer" style={{ alignItems:'center', alignContent:'center', textAlign:'center'}}>
-                <form  style = {{display: 'block', backgroundColor: '#90ee90', alignItems: 'center', boxSizing: 'inherit',  width: '200px', height: '300px', display:'inline-block'}}>
+                <form  style = {{display: 'block', backgroundColor: '#90ee90', color: 'black', alignItems: 'center', boxSizing: 'inherit',  width: '200px', height: '300px', display:'inline-block'}}>
                 <br></br>
-                <select>
+                <select className="rounded">
                     <option selected value="grade">Grade</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
@@ -37,7 +38,7 @@ return (
                 </select>
                 <br></br><br></br>
                 
-                <select>
+                <select className="rounded">
                     <option selected value="division">Division</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
@@ -49,29 +50,32 @@ return (
                 </select>
 
                 <br></br>
-                <br></br>
+
 
                 <br></br>
                 <br></br>
                 <div >
                     <p><b className="">Assignment</b></p>
 
-                    <input
-                        type="file"
-                        accept="*"
-                        style={{ display: 'none', color: '#90ee90' }}
-                        id="contained-button-file"
-                    />
                     <label style={{ display: 'block'}} htmlFor="contained-button-file">
                         <button variant="contained" component="span">
                         File    
                         </button>
                     </label>
+                                    <br></br>
+
+                    <input
+                        type="file"
+                        accept="*"
+                        style={{ display: 'inline',   width:'100%'}}
+                        id="contained-button-file"
+                    />
                 </div>
                 </form>
                 <br></br>
                 <br></br>
-                <button className="btn btn-danger" type="submit" value="submit">Upload</button>
+                <button style={{marginBottom: '15px', borderRadius: '15px'}} type="submit" value="submit">Upload</button>
+                <br></br>
             </div>
     </div>
 
