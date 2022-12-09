@@ -13,8 +13,8 @@ function gallery() {
           <Image
             src={profile1Pic}
             alt="Picture of the author"
-            width={400}
-            height={400} 
+            width={500}
+            height={500} 
             blurDataURL="data:..." 
             placeholder="blur"
           />
