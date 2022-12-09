@@ -12,6 +12,7 @@ const messageSchema = new mongoose.Schema(
         teacher_id: {
             type: mongoose.SchemaTypes.ObjectId,
             ref: "Teacher",
+            
         },
     },
     {

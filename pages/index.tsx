@@ -4,6 +4,7 @@ export default function Component() {
   console.log(session);
   if (session) {
     return (
+      
       <>
         Signed in as {session.user.email} <br />
         <button onClick={() => signOut()}>Sign out</button>
