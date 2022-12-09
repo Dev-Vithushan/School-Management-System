@@ -4,6 +4,7 @@ import Link from "next/link";
 
 function signup() {
   
+  
   return (
     <main className="min-h-screen bg-primary ">
       <div className="flex flex-col min-h-screen bg-grey-lighter">
@@ -39,12 +40,11 @@ function signup() {
               placeholder="Confirm Password"
             />
 
-            <a
-              href="../signup/2/"
+            <button
               className="inline-block w-full p-5 py-3 my-1 font-bold text-center text-white rounded bg-primary align-items-center hover:bg-black hover:text-white "
             >
-              Next page (1/2)
-            </a>
+              Confirm
+            </button>
           </div>
 
           <div className="mt-6 font-extrabold text-white">
