@@ -11,7 +11,7 @@ function signup() {
         <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
           <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
             <h1 className="mb-8 text-3xl font-bold text-center">
-              Create Account (1/2)
+              Create Account for teachers only
             </h1>
             <input
               type="text"
@@ -40,7 +40,7 @@ function signup() {
               placeholder="Confirm Password"
             />
 
-            <button
+            <button 
               className="inline-block w-full p-5 py-3 my-1 font-bold text-center text-white rounded bg-primary align-items-center hover:bg-black hover:text-white "
             >
               Confirm
