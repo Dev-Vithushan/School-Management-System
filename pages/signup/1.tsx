@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 function signup() {
+  
   return (
     <main className="min-h-screen bg-primary ">
       <div className="flex flex-col min-h-screen bg-grey-lighter">
@@ -48,7 +49,7 @@ function signup() {
 
           <div className="mt-6 font-extrabold text-white">
             Already have an account?
-            <Link href={"../auth/signin"}>
+            <Link href={"../login"}>
               <a className="mx-3 no-underline border-b border-blue text-blue">
                 Log in
               </a>

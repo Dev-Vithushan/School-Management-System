@@ -37,7 +37,7 @@ function Login() {
       <div className="flex flex-row  justify-center w-full bg-white flex=1 py-2 px=20 text-center w-2/3 max-w-4xl rounded-2xl shadow-2xl">
         <div className="w-3/5 p-5">
           <div>
-            <h2 className="mb-5 text-2xl font-bold text-primary">
+            <h2 className="mb-5 text-3xl font-bold text-primary">
               {" "}
               Sign in to your Account
             </h2>
@@ -45,14 +45,14 @@ function Login() {
           <div className="inline-block w-10 mb-10 border border-primary ">
             {" "}
           </div>
-          <div className="flex flex-row justify-center mb-10 space-between">
+          {/* <div className="flex flex-row justify-center mb-10 space-between">
             <FaGoogle className="mx-1 rounded-full" />
             <FaApple className="mx-1 rounded" />
             <FaGithub className="mx-1 rounded size-big" />
-          </div>
+          </div> */}
           <div className="flex flex-col items-center mb-10 ">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-row items-center w-64 p-4 mb-10 bg-gray-100 rounded-full">
+              <div className="flex flex-row items-center p-4 mb-10 bg-gray-100 rounded-full w-100">
                 <FaEnvelope className="mr-2" />
                 <input
                   type="email"
@@ -62,7 +62,7 @@ function Login() {
                   }
                   // {...register("email", { required: "Please enter the email" })}
                   id="email"
-                  className="bg-gray-100 "
+                  className="bg-gray-100 w-200"
                   placeholder="Email"
                 />
 
@@ -84,7 +84,7 @@ function Login() {
               <input
                 type="submit"
                 value="Sign In"
-                className="inline-block px-12 py-3 font-semibold border-2 rounded-full hover:bg-primary hover:text-white "
+                className="inline-block px-12 py-3 font-bold border-2 rounded-full text-1xl hover:bg-primary hover:text-white "
               />
             </form>
           </div>
