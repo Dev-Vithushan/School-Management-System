@@ -11,20 +11,33 @@ function signup() {
         <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
           <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
             <h1 className="mb-8 text-3xl font-bold text-center">
-              Create Account 
+              Create Student 
             </h1>
+            <input
+              type="number"
+              className="block w-full p-3 mb-4 border rounded border-grey-light"
+              name="id"
+              placeholder="Student ID"
+            />
             <input
               type="text"
               className="block w-full p-3 mb-4 border rounded border-grey-light"
-              name="fullname"
-              placeholder="Full Name"
+              name="firstname"
+              placeholder="First Name"
             />
 
             <input
               type="text"
               className="block w-full p-3 mb-4 border rounded border-grey-light"
-              name="email"
-              placeholder="Email"
+              name="lastname"
+              placeholder="Last Name"
+            />  
+
+            <input
+              type="date"
+              className="block w-full p-3 mb-4 border rounded border-grey-light"
+              name="dob"
+              placeholder="Dat of Birth"
             />
 
             <input
@@ -43,18 +56,18 @@ function signup() {
             <button 
               className="inline-block w-full p-5 py-3 my-1 font-bold text-center text-white rounded bg-primary align-items-center hover:bg-black hover:text-white "
             >
-              Confirm
+              create  
             </button>
           </div>
 
-          <div className="mt-6 font-extrabold text-white">
+          {/* <div className="mt-6 font-extrabold text-white">
             Already have an account?
             <Link href={"../login"}>
               <a className="mx-3 no-underline border-b border-blue text-blue">
                 Log in
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>

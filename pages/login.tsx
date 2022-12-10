@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useRouter } from 'next/router';
 
 
 function login() {
+
+  const [id,setID] = useState('');
+  const [password,setPassword] = useState('');
+
+  const router = useRouter();
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(id == 'T123'){
+      router.push('/profile')
+      }
+    else if(id == 'S123'){
+      router.push('/student')
+    }
+  }
     
   return (
     <div className='h-screen'>
@@ -34,16 +51,20 @@ function login() {
          
           <div className="mb-6">
             <input
-              type="text"
-              className="block w-full px-4 py-2 m-0 text-xl font-normal text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              name='id'
+              onChange={(e) => {setID(e.target.value)}}
+              type="string"
+              className="block w-full px-4 py-2 m-0 text-xl font-bold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               id="exampleFormControlInput2"
-              placeholder="Email address"
+              placeholder="Teacher ID or Student ID"
             />
           </div>
 
           
           <div className="mb-6">
             <input
+              name='password'
+              onChange={(e) => {setPassword(e.target.value)}}
               type="password"
               className="block w-full px-4 py-2 m-0 text-xl font-normal text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               id="exampleFormControlInput2"
@@ -53,19 +74,20 @@ function login() {
 
           <div className="text-center lg:text-middle">
             <button
+              onClick={handleSubmit}
               type="button"
               className="inline-block py-3 text-sm font-medium leading-snug text-white uppercase transition duration-150 ease-in-out rounded shadow-md bg-primary px-7 hover:bg-black hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black active:shadow-lg"
             >
               Login
             </button>
-            <p className="pt-1 mt-2 mb-0 text-lg font-semibold">
+            {/* <p className="pt-1 mt-2 mb-0 text-lg font-semibold">
               If you are Teacher, Don't have an account? 
               </p>
               
               <a
                 href="./signup/1"
                 className="transition duration-200 ease-in-out text-primary hover:text-black focus:primary"
-                >Register</a>
+                >Register</a> */}
           </div>
         </form>
       </div>
@@ -75,6 +97,6 @@ function login() {
     </div>
 
 )}
-  
+      
 
 export default login;
