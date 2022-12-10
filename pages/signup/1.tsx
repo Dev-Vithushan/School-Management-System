@@ -1,8 +1,18 @@
 import Form from "antd/es/form/Form";
 import React from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 function signup() {
+
+   const router = useRouter();
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    
+      router.push('/admin/success')
+    
+  }
   
   
   return (
@@ -24,6 +34,19 @@ function signup() {
               className="block w-full p-3 mb-4 border rounded border-grey-light"
               name="firstname"
               placeholder="First Name"
+            />
+
+            <input
+              type="text"
+              className="block w-full p-3 mb-4 border rounded border-grey-light"
+              name="Class"
+              placeholder="Class"
+            />  
+            <input
+              type="text"
+              className="block w-full p-3 mb-4 border rounded border-grey-light"
+              name="Division"
+              placeholder="Division"
             />
 
             <input
@@ -54,20 +77,21 @@ function signup() {
             />
 
             <button 
+              onClick={handleSubmit}
               className="inline-block w-full p-5 py-3 my-1 font-bold text-center text-white rounded bg-primary align-items-center hover:bg-black hover:text-white "
             >
               create  
             </button>
           </div>
 
-          {/* <div className="mt-6 font-extrabold text-white">
-            Already have an account?
-            <Link href={"../login"}>
+          <div className="mt-6 font-extrabold text-white">
+            Back to the Dashboard
+            <Link href={"../admin"}>
               <a className="mx-3 no-underline border-b border-blue text-blue">
-                Log in
+                Click here
               </a>
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </main>
