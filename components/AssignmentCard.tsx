@@ -25,7 +25,7 @@ export default function AssignmentCard() {
                         <span className="value">0</span>
                         <i className="ml-1 fas fa-thumbs-up"></i>
                         </a>
-                        <a href="#" button" className="p-1 m-0 btn btn-outline-danger btn-sm waves-effect">
+                        <a href="#" "button" className="p-1 m-0 btn btn-outline-danger btn-sm waves-effect">
                         <span className="value">0</span>
                         <i className="ml-1 fas fa-thumbs-down"></i>
                         </a>

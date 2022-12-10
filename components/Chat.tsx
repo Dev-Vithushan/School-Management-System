@@ -75,7 +75,7 @@ export default function Chat(){
                   </div>
                 </a>
               </li>
-              <li className="p-2 border-bottom" style="border-bottom: 1px solid rgba(255,255,255,.3) !important;">
+              <li className="p-2 border-bottom" style={"border-bottom: 1px solid rgba(255,255,255,.3) !important;"}>
                 <a href="#!" className="d-flex justify-content-between link-light">
                   <div className="flex-row d-flex">
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-4.webp" alt="avatar"
